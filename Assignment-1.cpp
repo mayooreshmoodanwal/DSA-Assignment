@@ -24,14 +24,14 @@ public:
         head = NULL;
     }
 
-    void insertFront(int x)
+    void aage(int x)
     {
         Node *temp = new Node(x);
         temp->next = head;
         head = temp;
     }
     
-    void insertEnd(int x)
+    void piche(int x)
     {
         Node *node = new Node(x);
         if (head == NULL)
@@ -47,7 +47,7 @@ public:
         temp->next = node;
     }
     
-    void insertPosition(int pos, int x)
+    void anywhere(int pos, int x)
     {
         if (pos == 1)
         {
@@ -67,7 +67,7 @@ public:
     }
 
 
-    void deleteFront()
+    void deleteAage()
     {
         if (head == NULL) return;
         
@@ -76,12 +76,12 @@ public:
         delete temp;
     }
 
-    void deleteLast()
+    void deletePiche()
     {
        
     }
 
-    void deletePosition(int pos)
+    void deleteAnywhere(int pos)
     {
     }
 
